@@ -11,14 +11,26 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous" defer></script>
 </head>
 <body>
-    <header>
-        <div class="container-fluid d-flex flex-direction-row vh-10">
-            <div id="logo" class="navbar-brand d-inline-block"><h2>JH</h2></div>
-            <img class="img-fluid d-inline-block" src="./imgs/search.png" alt="Search Image">
-            <div id="genre-dropdown"><h1>Genres</h1></div>
-            <a href="#"><img class="img-fluid d-inline-block" src="./imgs/account.png" alt="Account Image"></a>
+    <nav class="navbar navbar-expand-lg bg-dark text-light p-0">
+        <div class="container-fluid d-flex flex-direction-row">
+            <div class="container">
+                <a class="navbar-brand text-light" href="#"><h2>JH</h2></a>
+            </div>
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="./imgs/search.png" alt="Search Image" width="100px" height="100px">
+                </a>
+            </div>
+            <div class="container-fluid">
+                <div id="genre-dropdown"><h1>Genres</h1></div>
+            </div>
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="./imgs/account.png" alt="Search Image" width="100px" height="100px">
+                </a>
+            </div>
         </div>
-    </header>
+    </nav>
     <main>
         <section class="movie-section">
             <div class="carousel-container m-5">
@@ -55,8 +67,10 @@
             </div>
         </section>
     </main>
-    <footer>
-        <p class="footer-text">© Jason Xanthakis, 2025.</p>
+    <footer class="bg-black text-light p-2">
+        <div class="container text-center">
+            <p class="footer-text m-0">© Jason Xanthakis, 2025.</p>
+        </div>
     </footer>
 </body>
 </html>
